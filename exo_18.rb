@@ -1,8 +1,16 @@
-mail = "jean.dupont."
-i=0
+ mail = "jean.dupont."
+ mailfin = "@email.fr"
 
-50.times do
-  puts "#{mail}#{i+=1}@email.com"
+jusquaNeuf = 0
+nombre = 0
+email = ["pour être sur que ca stock", ]
+
+while nombre < 50
+    nombre += 1
+    if nombre <= 9
+        email.push "#{mail}#{jusquaNeuf}#{nombre}#{mailfin}"
+    else
+        email.push  "#{mail}#{nombre}#{mailfin}"
+    end
 end
-#izi
-#en 30 sec
+puts email
